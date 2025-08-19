@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>گالری هنری من</title>
+  <style>
+    body {
+      font-family: tahoma, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #111;
+      direction: rtl;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000;
+      color: gold;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: gold;
+      color: black;
+    }
+
+    .hero img {
+      max-width: 400px;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    #works .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    #works img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    #works img:hover {
+      transform: scale(1.05);
+    }
+
+    #order p {
+      margin: 20px 0;
+    }
+
+    #order button {
+      background: black;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #order button:hover {
+      background: gold;
+      color: black;
+    }
+
+    #about img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+    }
+
+    #gallery .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    #gallery img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    #gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    #contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #contact input, #contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    #contact button {
+      background: black;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #contact button:hover {
+      background: gold;
+      color: black;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- هدر -->
+  <header>
+    <div class="logo">ARTIST</div>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#works">آثار</a>
+      <a href="#gallery">گالری</a>
+      <a href="#order">سفارش</a>
+      <a href="#about">درباره من</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </header>
+
+  <!-- سکشن اصلی -->
+  <section id="home" class="hero">
+    <div class="text">
+      <h2>اینجا جاییه که هنر و خلاقیت به زندگی شما وارد میشه</h2>
+      <button>مشاهده آثار</button>
+      <button>ارتباط با من</button>
+    </div>
+    <img src="https://via.placeholder.com/400x300" alt="نمونه اثر">
+  </section>
+
+  <!-- آثار -->
+  <section id="works">
+    <h2>آثار من</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="اثر ۱">
+      <img src="https://via.placeholder.com/300" alt="اثر ۲">
+      <img src="https://via.placeholder.com/300" alt="اثر ۳">
+      <img src="https://via.placeholder.com/300" alt="اثر ۴">
+    </div>
+  </section>
+
+  <!-- گالری حرفه‌ای -->
+  <section id="gallery">
+    <h2>گالری تصاویر</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/200x200" alt="گالری ۱">
+      <img src="https://via.placeholder.com/200x200" alt="گالری ۲">
+      <img src="https://via.placeholder.com/200x200" alt="گالری ۳">
+      <img src="https://via.placeholder.com/200x200" alt="گالری ۴">
+    </div>
+  </section>
+
+  <!-- سفارش -->
+  <section id="order">
+    <h2>سفارش دهید</h2>
+    <p>آثار هنری منحصربه‌فرد برای فضای شخصی یا کاری شما</p>
+    <button>سفارش دهید</button>
+  </section>
+
+  <!-- درباره من -->
+  <section id="about">
+    <h2>درباره من</h2>
+    <img src="https://via.placeholder.com/180" alt="من">
+    <p>من یک هنرمند گرافیک هستم و عاشق خلق آثار مینیمال و مدرن.</p>
+  </section>
+
+  <!-- تماس -->
+  <section id="contact">
+    <h2>تماس با من</h2>
+    <form>
+      <input type="text" placeholder="نام شما" required>
+      <input type="email" placeholder="ایمیل شما" required>
+      <textarea rows="5" placeholder="پیام شما" required></textarea>
+      <button type="submit">ارسال</button>
+    </form>
+  </section>
+
+  <!-- فوتر -->
+  <footer>
+    <p>© 2025 همه حقوق محفوظ است</p>
+  </footer>
+</body>
+</html>
